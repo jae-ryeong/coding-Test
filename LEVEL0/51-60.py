@@ -67,3 +67,14 @@
 # 57. n 번째 원소부터
 # def solution(num_list, n):
 #     return num_list[n-1:]
+
+# 58. 뒤에서 5등 위로
+# def solution(num_list):
+#     result = sorted(num_list)
+#     return result[5:]
+# 한 줄 - return sorted(num_list)[5:]
+
+# 59. 조건에 맞게 수열 변환하기 3
+arr = [1, 2, 3, 100, 99, 98]	
+k = 3
+print(arr.)
