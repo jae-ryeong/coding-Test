@@ -6,28 +6,12 @@
 #     return sum%9
 
 # 52. 주사위 게임 3
-
-# s1 = {a,b,c,d}
-# l1 = list(s1)
-# l2 = sorted([a,b,c,d])
-# if len(s1) == 1:
-#     answer = 1111*a
-# elif len(s1) == 2:
-#     if l2[0] == l2[2]:
-#         answer = (10 * l1[0] + l1[1]) ** 2
-#     else:
-#         answer = (s1[0] + s1[1]) * (abs(s1[0] - s1[1]))
-# elif len(s1) == 3:
-#     answer = l2[1] * l2[2]
-# else:
-#     answer = l1[0]
-
 # def solution(a, b, c, d):
 #     s1 = {a,b,c,d}
 #     l1 = list(s1)
 #     l2 = sorted([a,b,c,d])
-#     if len(s1) == 1: # 완벽
-#         answer = 1111*a
+#     if len(s1) == 1:
+#         answer = 1111*l1[0]
 #     elif len(s1) == 2:
 #         if l2.count(l2[0])==3:
 #             answer = (10 * l2[0] + l1[1]) ** 2
@@ -36,14 +20,15 @@
 #         elif l2.count(l2[0]) == 2:
 #             answer = (l1[0] + l1[1]) * (abs(l1[0] - l1[1]))
 #     elif len(s1) == 3:
-#         answer = l1[1] * l1[2]
+#         if l2[0] == l2[1]:
+#             answer = l2[2] * l2[3]
+#         elif l2[1] == l2[2]:
+#             answer = l2[0] * l2[3]
+#         elif l2[2] == l2[3]:
+#             answer = l2[0] * l2[1]
 #     else:
 #         answer = l1[0]
-#     print(s1)
-#     print(l1)
-#     print(l2)
 #     return answer
-# print(solution(2,6,4,5))    # 안되는 반례 (1,1,4,1)
 
 # 53. 문자열의 뒤의 n글자
 # def solution(my_string, n):
@@ -75,6 +60,17 @@
 # 한 줄 - return sorted(num_list)[5:]
 
 # 59. 조건에 맞게 수열 변환하기 3
-arr = [1, 2, 3, 100, 99, 98]	
-k = 3
-print(arr.)
+# def solution(arr, k):
+#     result = []
+#     if k%2:
+#         for i in range(len(arr)):
+#             result.append(arr[i] * k)
+#     else:
+#         for i in range(len(arr)):
+#             result.append(arr[i] + k)
+#     return result
+#   한 줄 - return [i*k if k%2!=0 else i+k for i in arr]
+
+# 60. 카운트 다운
+# def solution(start, end):
+#     return [i for i in range(start, end-1 , -1)]
