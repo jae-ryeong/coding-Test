@@ -68,4 +68,33 @@
 #             answer+=1
 #     return answer
 
-# 144. 피자 나눠 먹기 (3)
+# 144. 특이한 정렬
+# def solution(numlist, n):
+#     answer = [abs(i-n) for i in numlist]
+#     answer.sort()
+#     temp = [i-n for i in numlist]
+#     for i in range(len(answer)-1):
+#         if answer[i] == answer[i+1]:
+#             answer[i+1] = -answer[i+1]
+    
+#     for i in range(len(answer)):
+#         if answer[i] not in temp:
+#             answer[i] = -answer[i]
+
+#     return [i+n for i in answer]
+
+# 풀이1:
+# def solution(numlist, n):
+#     answer = sorted(numlist,key = lambda x : (abs(x-n), n-x))
+#     return answer
+# n과의 거리의 절대값 =  abs(x-n)에 대해 정렬하고,
+# abs(n-x)가 같으면 n-x가 큰 값을 먼저 정렬
+
+# 145. 피자 나눠 먹기 (3)
+# def solution(slice, n):
+#     if n%slice != 0 :
+#         return (n//slice) + 1
+#     else:
+#         return (n//slice)
+# 한 줄 코드:
+# return ((n - 1) // slice) + 1
