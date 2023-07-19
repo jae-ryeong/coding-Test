@@ -46,4 +46,28 @@
 # sets = [set(range(min(l), max(l))) for l in lines]
 #     return len(sets[0] & sets[1] | sets[0] & sets[2] | sets[1] & sets[2])
 
-# 159.
+# 159. 양꼬치
+# def solution(n, k):
+#     return (12000 * n) + (2000 * (k - n//10))
+
+# 160. 문자열 밀기
+# def solution(A, B):
+#     answer = 0
+#     for i in range(len(A)):
+#         if A==B:
+#             return answer
+#         A = A[-1] + A[:len(A)-1]
+#         answer+=1
+#     return -1
+
+# 한 줄 풀이    - solution=lambda a,b:(b*2).find(a)
+
+# 161. 짝수의 합
+# solution=lambda n: sum(i for i in range(2,n+1, 2))
+
+# 162. 유한소수 판별하기
+def solution(a, b):
+    answer = 0
+    prime_factor=[]
+    
+    return answer
