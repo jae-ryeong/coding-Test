@@ -66,8 +66,48 @@
 # solution=lambda n: sum(i for i in range(2,n+1, 2))
 
 # 162. 유한소수 판별하기
-def solution(a, b):
-    answer = 0
-    prime_factor=[]
+# def solution(a, b):
+#     point = min(a,b) // 2
+#     n = 2
+#     while(n <= point):
+#         if a%n == 0 and b%n == 0:
+#             a = a//n
+#             b = b//n
+#             n=2
+#         n+=1
+#     print(b)
+#     for _ in range(b//2):
+#         if b in (1, 2, 4, 5, 8):
+#             return 1
+#         elif b in (3, 6, 7, 9):
+#             return 2
+        
+#         if b%2 == 0:
+#             b = b//2
+#         elif b%5 == 0:
+#             b = b//5
+#         else:
+#             return 2     
     
-    return answer
+#     return 1
+# print(solution(15,22))
+
+# 163. 각도기
+# def solution(angle):
+#     if angle > 0 and angle <90:
+#         return 1
+#     elif angle == 90:
+#         return 2
+#     elif angle > 90 and angle < 180:
+#         return 3
+#     else:
+#         return 4
+
+# 164. 종이 자르기
+# def solution(M, N):    
+#     return (M) * (N-1) + (M-1)
+
+# 165. 모음 제거
+# def solution(my_string):
+#     return my_string.replace('a','').replace('e','').replace('i','').replace('o','').replace('u','')
+# 한 줄 코드 - return "".join([i for i in my_string if not(i in "aeiou")])
