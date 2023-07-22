@@ -22,3 +22,30 @@
 #         idx2+=2
 #     return 0
 # print(solution([[1,1],[2,2],[3,3],[4,17]]))
+
+# 169. 진료순서 정하기
+# def solution(emergency):
+#     sorted_emergency = sorted(emergency, reverse=True)
+#     dic = {string: i+1 for i, string in enumerate(sorted_emergency)}
+#     return [dic.get(i) for i in emergency]
+
+# 170. 외계행성의 나이
+# def solution(age):
+#     answer = ''
+#     age_dic = [chr(i) for i in range(97,107)]
+#     for i in list(str(age)):
+#         answer += age_dic[int(i)]
+#     return answer
+# 한 줄 코드 - return ''.join([chr(int(i)+97) for i in str(age)])
+
+# 171. 영어가 싫어요
+# def solution(numbers):
+#     answer = numbers.replace("one","1").replace("two", "2").replace("three", "3").replace("four", "4").replace("five", "5").replace("six", "6").replace("seven", "7").replace("eight", "8").replace("nine", "9").replace("zero", "0")
+#     return int(answer)
+# for문으로 바꾸면
+# def solution(numbers):
+#     for num, eng in enumerate(["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"]):
+#         numbers = numbers.replace(eng, str(num))
+#     return int(numbers)
+
+# 172. 
