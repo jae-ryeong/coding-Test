@@ -72,4 +72,12 @@
 #     return 2 * len(message)
 
 # 175. 배열 회전시키기
- 
+ def solution(numbers, direction):
+    answer = []
+    if direction == "right":
+        answer.append(numbers[-1])
+        answer.append(numbers[:len(numbers)-1])
+    elif direction == "left":
+        answer.append(numbers[1:])
+        answer.append(numbers[0])
+    return answer
