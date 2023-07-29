@@ -51,5 +51,47 @@
 # def solution(rsp):
     # d = {'0':'5','2':'0','5':'2'}
     # return ''.join(d[i] for i in rsp)
-# 179. 
-print(solution("205"))
+# 179. 다항식 더하기
+# def solution(polynomial):
+#     answer = polynomial.split('+')
+#     coe = 0
+#     con = 0
+    
+#     for i in answer:
+#         if 'x' in i:
+#             temp = i.strip().split('x')
+            
+#             coe += 1 if temp[0] == '' else int(temp[0])
+#         else:
+#             con += int(i)
+            
+#     if coe == 0:
+#         return str(con)
+#     elif coe == 1:
+#         if con == 0:
+#             return "x"
+#         return 'x + ' + str(con)
+    
+#     if con == 0:
+#         return str(coe) + "x"
+#     else:
+#         return str(coe) + "x + " + str(con)
+
+# isdigit() 함수 사용, return문이 좀 더 깔끔하다
+# def solution(polynomial):
+#     xnum = 0
+#     const = 0
+#     for c in polynomial.split(' + '):
+#         if c.isdigit():
+#             const+=int(c)
+#         else:
+#             xnum = xnum+1 if c=='x' else xnum+int(c[:-1])
+#     if xnum == 0:
+#         return str(const)
+#     elif xnum==1:
+#         return 'x + '+str(const) if const!=0 else 'x'
+#     else:
+#         return f'{xnum}x + {const}' if const!=0 else f'{xnum}x'
+
+# 180.
+print(solution("x"))
