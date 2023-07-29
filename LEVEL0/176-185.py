@@ -93,5 +93,25 @@
 #     else:
 #         return f'{xnum}x + {const}' if const!=0 else f'{xnum}x'
 
-# 180.
-print(solution("x"))
+# 180. 구슬을 나누는 경우의 수
+# import math
+# def solution(balls, share):
+#     return math.factorial(balls) / (math.factorial(balls-share) * math.factorial(share) )
+# return math.comb(balls, share)
+
+# 181. 등수 매기기
+# 나는 틀렸다...
+# def solution(score):
+#     score_avg = [sum(i)/2 for i in score]
+
+#     asc_avg = sorted(score_avg, reverse=True)
+    
+#     answer = []
+#     for i in score_avg:
+#         answer.append(asc_avg.index(i)+1)
+
+#     return answer
+# 나는 틀렸다...
+
+# 182. 
+print(solution([[80, 70], [70, 80], [30, 50], [90, 100], [100, 90], [100, 100], [10, 30]]))
