@@ -113,5 +113,40 @@
 #     return answer
 # 나는 틀렸다...
 
-# 182. 
-print(solution([[80, 70], [70, 80], [30, 50], [90, 100], [100, 90], [100, 100], [10, 30]]))
+# 182. 2차원으로 만들기
+# def solution(num_list, n):
+#     answer = []
+#     for i in range(0,len(num_list),n):
+#         temp = []
+#         for j in range(n):
+#             temp.append(num_list[i+j])
+#         answer.append(temp)
+#     return answer
+
+# temp를 안써도 된다.
+# def solution(num_list, n):
+#     answer = []
+#     for i in range(0, len(num_list), n):
+#         answer.append(num_list[i:i+n])
+#     return answer
+
+
+# 183. 공 던지기
+# def solution(numbers, k):
+#     if len(numbers) % 2:    # 인원이 홀수
+#         answer = 0
+#         for _ in range(k-1):
+#             answer += 2
+#             if answer == len(numbers): answer = 0
+#             elif answer == len(numbers)+1: answer =1
+#         return numbers[answer]
+#     else:                   # 인원이 짝수
+#         answer = 2 * (k-1)
+#         return numbers[answer if answer <= len(numbers) else answer - ( len(numbers) * ( answer // len(numbers) ) )]
+
+# 혁신
+# def solution(numbers, k):
+#     return numbers[2 * (k - 1) % len(numbers)]
+
+# 184. 
+print(solution([1, 2, 3, 4, 5], 0))
