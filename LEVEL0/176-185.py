@@ -148,5 +148,21 @@
 # def solution(numbers, k):
 #     return numbers[2 * (k - 1) % len(numbers)]
 
-# 184. 
-print(solution([1, 2, 3, 4, 5], 0))
+# 184. 합성수 찾기
+# def solution(n):
+#     answer = 0
+#     for i in range(n+1):
+#         if i>2 and i % 2 == 0:
+#             answer += 1
+#             continue
+
+#         for j in range(2, i):
+#             if i % j == 0:
+#                 answer += 1
+#                 break
+#     return answer
+
+# 185. 최댓값 만들기(1)
+# def solution(numbers):
+#     numbers = sorted(numbers)
+#     return numbers[-1] * numbers[-2]
