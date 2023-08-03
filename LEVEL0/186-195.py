@@ -61,5 +61,15 @@
 #             if j == 0 : answer += 1
 #     return answer
 
-# 190. 
-print(solution([[0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 1, 1, 0], [0, 0, 0, 0, 0]]))
+# 190. 문자열 정렬하기 (1)
+# def solution(my_string):
+#     return sorted([int(i) for i in my_string if i in ['0','1','2','3','4','5','6','7','8','9']])
+# return을 더 짧게
+# return sorted([int(c) for c in my_string if c.isdigit()])
+
+# 191. 문자열 정렬하기 (2)
+# def solution(my_string):
+#     return ''.join(sorted(my_string.lower()))
+
+# 192. 
+print(solution("hi12392"))
