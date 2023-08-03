@@ -71,5 +71,23 @@
 # def solution(my_string):
 #     return ''.join(sorted(my_string.lower()))
 
-# 192. 
-print(solution("hi12392"))
+# 192. 로그인 성공?
+# def solution(id_pw, db):
+#     answer ='fail'
+#     for i in db:
+#         if i[0] != id_pw[0]:
+#             continue
+#         answer = 'wrong pw'
+#         if i[1] == id_pw[1]:
+#             return 'login'
+    
+#     return answer
+
+# 193. 숨어있는 숫자의 덧셈 (1)
+# def solution(my_string):
+#     answer = 0
+#     for i in my_string:
+#         if i.isdigit():
+#             answer += int(i)
+#     return answer 
+print(solution("aAb1B2cC34oOp"))
