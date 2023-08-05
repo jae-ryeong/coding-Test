@@ -90,4 +90,21 @@
 #         if i.isdigit():
 #             answer += int(i)
 #     return answer 
-print(solution("aAb1B2cC34oOp"))
+
+# 194. 소인수분해
+# def solution(n):
+#     answer = set()
+#     num = 2
+#     while (num <= n):
+#         if n%num == 0:
+#             answer.add(num)
+#             print(num)
+#             n = n//num
+#             num = 2
+#         else:
+#             num += 1
+#     return sorted(list(answer))
+
+# 195. 배열 원소의 길이
+# def solution(strlist):
+#     return [len(i) for i in strlist]
