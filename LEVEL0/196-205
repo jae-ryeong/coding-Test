@@ -1,0 +1,23 @@
+# 196. 삼각형의 완성조건 (1)
+# def solution(sides):
+#     c = max(sides)
+#     sides.remove(c)
+    
+#     if c < sides[0] + sides[1]:
+#         return 1
+#     else:
+#         return 2
+
+# 똑똑하네... 
+# return 1 if max(sides) < (sum(sides) - max(sides)) else 2
+
+# 197. 중복된 문자 제거
+# def solution(my_string):
+#     answer = ''
+#     for i in my_string:
+#         if i in answer:
+#             continue
+#         answer += i
+#     return answer
+
+print(solution(24))
