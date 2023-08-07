@@ -20,4 +20,40 @@
 #         answer += i
 #     return answer
 
-print(solution(24))
+# 198. 직사각형 넓이 구하기
+# def solution(dots):
+#     maxx, maxy = max(dots)
+#     minx, miny = min(dots)
+#     return (maxx-minx) * (maxy-miny)
+
+# 199. 인덱스 바꾸기
+# def solution(my_string, num1, num2):
+#     answer= list(my_string)
+#     temp = answer[num1]
+#     answer[num1] = answer[num2]
+#     answer[num2] = temp
+
+#     my_string = ''.join(answer)
+     
+#     return my_string
+# 더 짧게 바꾸기
+# s[num1],s[num2] = s[num2],s[num1]
+#     return ''.join(s)
+
+# 200. 한 번만 등장한 문자
+# def solution(s):
+#     check = set(s)
+#     check = list(check) * 2
+
+#     for i in s:
+#         if i in check:
+#             check.remove(i)
+    
+#     return ''.join(sorted(check))
+
+# count를 사용하자..
+#  answer = "".join(sorted([ ch for ch in s if s.count(ch) == 1]))
+#     return answer
+
+# 201. 
+print(solution("abcabcadc"))
