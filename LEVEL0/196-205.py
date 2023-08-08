@@ -55,5 +55,15 @@
 #  answer = "".join(sorted([ ch for ch in s if s.count(ch) == 1]))
 #     return answer
 
-# 201. 
-print(solution("abcabcadc"))
+# 201. 약수 구하기
+# def solution(n):
+#     return [i for i in range(1,n+1) if n%i==0]
+
+# 202. 머쓱이보다 키 큰 사람
+# def solution(array, height):
+#     array.append(height)
+#     array = sorted(array)
+#     return len([i for i in array if i>height])
+
+# 203. 
+print(solution(24))
