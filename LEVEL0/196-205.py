@@ -65,5 +65,34 @@
 #     array = sorted(array)
 #     return len([i for i in array if i>height])
 
-# 203. 
-print(solution(24))
+# 203. 세균 증식
+# def solution(n, t):
+#     for _ in range(t):
+#         n *= 2
+#     return n
+
+# 천재
+# def solution(n, t):
+#     return n << t
+
+# 평범
+# def solution(n, t):
+#     return n*(2**t)
+
+# 204. 삼각형의 완성조건 (2)
+# def solution(sides):
+#     answer = 0
+#     max_side = max(sides)
+#     min_side = min(sides)
+    
+#     for _ in range(max_side + 1 - min_side, max_side+1):
+#         answer+=1
+    
+#     for _ in range(max_side+1,max_side+min_side):
+#         answer+=1
+#     return answer
+
+# 천재
+
+# 205. 
+print(solution([11, 7]))
