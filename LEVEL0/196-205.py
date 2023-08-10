@@ -94,5 +94,39 @@
 
 # 천재
 
-# 205. 
-print(solution([11, 7]))
+# 205. 캐릭터의 좌표
+# def solution(keyinput, board):
+#     answer=[0,0]
+#     minx = -(board[0]//2)
+#     maxx = board[0]//2
+#     miny = -(board[1]//2)
+#     maxy = board[1]//2
+    
+#     for i in keyinput:
+#         if i == "left": answer[0] -= 1
+#         elif i == "right": answer[0] += 1
+#         elif i == "up": answer[1] += 1
+#         elif i =="down": answer[1] -= 1
+
+#         if answer[0] < minx: answer[0] = minx
+#         elif answer[0] > maxx: answer[0] = maxx
+        
+#         if answer[1] < miny: answer[1] = miny
+#         elif answer[1] > maxy: answer[1] = maxy
+        
+    
+#     return answer
+
+# 깔끔 그 자체
+# def solution(keyinput, board):
+#     x_lim,y_lim = board[0]//2,board[1]//2
+#     move = {'left':(-1,0),'right':(1,0),'up':(0,1),'down':(0,-1)}
+#     x,y = 0,0
+#     for k in keyinput:
+#         dx,dy = move[k]
+#         if abs(x+dx)>x_lim or abs(y+dy)>y_lim:
+#             continue
+#         else:
+#             x,y = x+dx,y+dy
+
+#     return [x,y]
