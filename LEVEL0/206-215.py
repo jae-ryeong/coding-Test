@@ -91,5 +91,38 @@
 # def solution(array):
 #     return str(array).count('7')
 
-# 212. 
-print(solution([7, 77, 17]))
+# 212. 이진수 더하기
+# def solution(bin1, bin2):
+#     answer = int(bin1,2) + int(bin2,2)
+#     return bin(answer)[2:]
+
+# 213. 숨어있는 숫자의 덧셈 (2)
+# import re
+# def solution(my_string):
+#     c = re.sub(r"[a-z]"," ",my_string)
+#     c = re.sub(r"[A-Z]"," ",c)
+#     c = c.strip()
+
+#     return sum(int(i) for i in c.split())
+
+# 깔끔하다
+# def solution(my_string):
+#     s = ''.join(i if i.isdigit() else ' ' for i in my_string)
+#     return sum(int(i) for i in s.split())
+
+# 214. 숫자 찾기
+# def solution(num, k):
+#     for i in str(num):
+#         if int(i) == k:
+#             return list(str(num)).index(str(k)) + 1
+#     return -1
+
+# enum으로 
+# def solution(num, k):
+#     for i, n in enumerate(str(num)):
+#         if str(k) == n:
+#             return i + 1
+#     return -1
+
+# 215. 
+print(solution("aAb1B2cCB34oOp"))
