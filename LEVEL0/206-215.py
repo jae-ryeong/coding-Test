@@ -124,5 +124,7 @@
 #             return i + 1
 #     return -1
 
-# 215. 
+# 215. 자릿수 더하기
+# def solution(n):
+#     return sum(int(i) for i in (list(str(n))))
 print(solution("aAb1B2cCB34oOp"))
