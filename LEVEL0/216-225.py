@@ -38,5 +38,22 @@
 # def solution(n):
 #     return 1 if (n ** 0.5).is_integer() else 2
 
-# 220.
-print(solution("aAb1B2cCB34oOp"))
+# 220. n의 배수 고르기
+# def solution(n, numlist):
+#     return [i for i in numlist if i%n==0]
+
+# 221. 최댓값 만들기 (2)
+# def solution(numbers):
+#     numbers = sorted(numbers)
+#     a = numbers[0] * numbers[1]
+#     b = numbers[-1] * numbers[-2]
+#     return max(a,b)
+
+# 222. 가까운 수
+# def solution(array, n):
+#     temp = [abs(i-n) for i in array]
+#     temp = sorted(temp)
+#     return -temp[0]+n if -temp[0]+n in array else temp[0]+n
+
+# 223. 
+print(solution([3, 10, 12, 28],20))
