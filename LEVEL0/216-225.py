@@ -55,5 +55,28 @@
 #     temp = sorted(temp)
 #     return -temp[0]+n if -temp[0]+n in array else temp[0]+n
 
-# 223. 
-print(solution([3, 10, 12, 28],20))
+# 223. 369게임
+# def solution(order):
+#     return str(order).count("3") + str(order).count("6") + str(order).count("9")
+
+# 224. 대문자와 소문자
+# def solution(my_string):
+#     answer = []
+#     for i in my_string:
+#         if i.islower():
+#             answer.append(i.upper())
+#         else:
+#             answer.append(i.lower())
+#     return ''.join(answer)
+
+# 한 줄 코드
+# def solution(my_string):
+#     return my_string.swapcase()
+
+# 225. 암호 해독
+# def solution(cipher, code):
+#     return ''.join([cipher[i] for i in range(code-1,len(cipher), code)])
+
+# 그냥 간단하게
+# def solution(cipher, code):
+#     return cipher[code-1::code]
