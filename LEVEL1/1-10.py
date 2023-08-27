@@ -88,4 +88,43 @@
 #         result += a_to_z[(dic_alpha[i] + index) % l]
 
 #     return result
-print(solution("y", "baz", 1))
+
+# 8. 핸드폰 번호 가리기
+# def solution(phone_number):
+#     answer = ''
+#     answer += '*' * (len(phone_number)-4)
+#     return answer + phone_number[-4:]
+
+# 9. 콜라츠 추측
+# def solution(num):
+#     answer = 0
+#     while(num != 1 and answer < 501):
+#         if num % 2 == 0:
+#             num = num//2
+#         else:
+#             num = num * 3 + 1
+#         answer += 1    
+#         if num == 1: break      
+#     return answer if answer < 501 else -1
+
+# 10. 체육복
+# def solution(n, lost, reserve):
+#     answer = n - len(lost)
+#     lost.sort()
+#     reserve.sort()
+    
+#     for i in [j for j in reserve]:
+#         if i in lost:
+#             lost.remove(i)
+#             reserve.remove(i)
+#             answer+=1
+
+#     for i in reserve:
+#         if i-1 in lost:
+#             lost.remove(i-1)
+#             answer+=1
+#         elif i+1 in lost:
+#             lost.remove(i+1)
+#             answer+=1
+#     return answer
+print(solution(8, [5,6,7,8], [4,7]))
