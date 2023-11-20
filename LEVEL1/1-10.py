@@ -127,4 +127,3 @@
 #             lost.remove(i+1)
 #             answer+=1
 #     return answer
-print(solution(8, [5,6,7,8], [4,7]))
