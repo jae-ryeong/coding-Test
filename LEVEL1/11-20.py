@@ -40,5 +40,31 @@
 #         answer.append(int(item[0]))
 #     return answer
 
-#14. 
-print(solution(5,[2, 1, 2, 6, 2, 4, 3, 3]))
+#14. 수박수박수박수박수박수?
+# def solution(n):
+#     answer = ''
+    
+#     if n%2 == 0:
+#         answer += '수박' * (n//2)
+#     else:
+#         answer += '수박' * (n//2) + '수'
+    
+#     return answer
+
+# 좋은 코드
+# str = "수박"*n
+#     return str[:n]
+
+#15. 두 정수 사이의 합
+# def solution(a, b):
+#     sum = 0
+#     for i in range(min(a,b), max(a,b)+1):
+#         sum += i
+#     return sum
+
+# 수학적 지식
+# def adder(a, b):
+#     return (abs(a-b)+1)*(a+b)//2
+
+#16. 
+print(solution(5))
