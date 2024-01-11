@@ -66,5 +66,27 @@
 # def adder(a, b):
 #     return (abs(a-b)+1)*(a+b)//2
 
-#16. 
-print(solution(5))
+#16. 제일 작은 수 제거하기
+# def solution(arr):
+#     if len(arr) == 1:
+#         return [-1]
+#     answer = arr.remove(min(arr))
+#     return [i for i in arr if i != min(arr)]
+
+#17. 키패드 누르기
+def solution(numbers, hand):
+    answer = []
+    phone = [[1,2,3], [4,5,6], [7,8,9], ['*','0','#']]
+    LTemp = ''
+    RTemp = ''
+    for i in numbers:
+        if i in [1,4,7]:
+            LTemp = i
+            answer.append('L')
+        elif i in [3,6,9]:
+            RTemp = i
+            answer.append('R')
+        else:
+            if phone.
+    return answer
+print(solution([1, 3, 4, 5, 8, 2, 1, 4, 5, 9, 5], "right"))
