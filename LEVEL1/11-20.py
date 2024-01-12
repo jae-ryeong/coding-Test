@@ -73,20 +73,53 @@
 #     answer = arr.remove(min(arr))
 #     return [i for i in arr if i != min(arr)]
 
-#17. 키패드 누르기
-def solution(numbers, hand):
-    answer = []
-    phone = [[1,2,3], [4,5,6], [7,8,9], ['*','0','#']]
-    LTemp = ''
-    RTemp = ''
-    for i in numbers:
-        if i in [1,4,7]:
-            LTemp = i
-            answer.append('L')
-        elif i in [3,6,9]:
-            RTemp = i
-            answer.append('R')
-        else:
-            if phone.
-    return answer
-print(solution([1, 3, 4, 5, 8, 2, 1, 4, 5, 9, 5], "right"))
+#17. 정수 제곱근 판별
+# def solution(n):
+#     sqrt = n**0.5
+#     if (int(sqrt) == sqrt):
+#         return (sqrt+1) ** 2
+#     else:
+#         return -1
+
+#18. 키패드 누르기
+# def solution(numbers, hand):
+#     answer = ''
+#     phone = {
+#         1:[0,0], 2:[0,1], 3:[0,2],
+#         4:[1,0], 5:[1,1], 6:[1,2],
+#         7:[2,0], 8:[2,1], 9:[2,2],
+#         '*':[3,0], 0:[3,1], '#':[3,2]
+#     }
+#     LTemp = '*'
+#     RTemp = '#'
+#     hh = hand[0:1].upper()
+#     for i in numbers:
+#         if i in [1,4,7]:
+#             LTemp = i
+#             answer+='L'
+#         elif i in [3,6,9]:
+#             RTemp = i
+#             answer+='R'
+#         else:
+#             CArr = phone.get(i)
+
+#             LArr = phone.get(LTemp)
+#             RArr = phone.get(RTemp)
+
+#             LPoint = abs(CArr[0] - LArr[0]) + abs(CArr[1] - LArr[1])
+#             RPoint = abs(CArr[0] - RArr[0]) + abs(CArr[1] - RArr[1])
+
+#             if LPoint < RPoint:
+#                 answer += 'L'
+#                 LTemp = i
+#             elif LPoint > RPoint:
+#                 answer += 'R'
+#                 RTemp = i
+#             else:
+#                 answer += hh
+#                 if hh == 'L':
+#                     LTemp = i
+#                 else:
+#                     RTemp = i
+#     return answer
+# print(solution([1, 2, 3, 4, 5, 6, 7, 8, 9, 0], "right"))
