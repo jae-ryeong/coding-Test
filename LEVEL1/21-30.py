@@ -13,4 +13,18 @@
 #     if nump == numy: return True
 #     else: return False
 
-# print(solution("pPoooyY"))
+# 23. 햄버거 만들기
+# def solution(ingredient):
+#     result = 0
+#     s = []
+    
+#     for i in ingredient:
+#         s.append(i)
+#         if s[-4:] == [1,2,3,1]:
+#             result += 1
+#             for _ in range(4):
+#                 s.pop()
+    
+#     return result
+
+print(solution([2, 1, 1, 2, 3, 1, 2, 3, 1]))
